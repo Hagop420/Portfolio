@@ -255,6 +255,10 @@ nav .active {
   padding: 10px 25px;
 }
 
+.ABOUT_ME .font-sized {
+  font-size: 21px;
+}
+
 .ABOUT_ME .icons i.fa-envelope:hover {
   background-color: rgb(63, 127, 190);
   color: #333;
@@ -283,12 +287,12 @@ nav .active {
 .paragraph_animation {
   opacity: 0;
   transform: translateY(20px);
-  transition: 0.5s 0.5s all ease-in-out;
+  transition: 0.5s 0.1s all ease-in-out;
 }
 .button_animation {
   opacity: 0;
-  transform: translateY(20px);
-  transition: 0.5s 0.9s all ease-in-out;
+  transform: translateX(20px);
+  transition: 0.5s 0.2s all ease-in-out;
 }
 
 .about_image_animation_appeared,
