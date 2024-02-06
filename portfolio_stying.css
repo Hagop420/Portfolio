@@ -1,0 +1,483 @@
+/* GOOGLE FONT'S */
+
+/* ROBOTO */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+nav {
+  background-color: #000;
+  position: fixed;
+  width: 100%;
+  z-index: 9999999999;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav .mainMenu {
+  display: flex;
+  list-style: none;
+}
+
+nav .mainMenu li a {
+  display: inline-block;
+  padding: 15px;
+}
+
+nav .openMenu {
+  display: none;
+}
+
+nav .openMenu {
+  font-size: 1.3rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+}
+
+nav .mainMenu .closeMenu,
+.icons i {
+  display: none;
+}
+
+.fa-github:hover {
+  background-color: grey;
+  color: #fff;
+  cursor: pointer;
+}
+.fa-linkedin:hover {
+  background: #0077b5;
+  color: #fff;
+}
+.fa-phone:hover {
+  background-color: silver;
+  color: #211818;
+}
+.fa-envelope:hover {
+  background-color: #f2a60c;
+  color: #fff;
+}
+
+.mobile_socials i.fa-github:hover {
+  background-color: #000;
+}
+
+nav .logo {
+  cursor: pointer;
+  font-size: 25px;
+  margin: 6px;
+}
+
+/* HAMBURGER MENU MEDIA Q. */
+@media (max-width: 800px) {
+  nav {
+    justify-content: space-between;
+  }
+  nav .nav-link:hover::before {
+    max-width: 100%;
+    color: yellow !important;
+  }
+  nav .mainMenu {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    transition: top 1.3s ease;
+    display: none;
+  }
+
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  nav .openMenu {
+    display: block;
+  }
+
+  nav .mainMenu li a {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .icons i {
+    display: inline-block;
+    padding: 12px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 50%;
+    margin: 5px;
+  }
+}
+
+nav .nav-link {
+  /* padding: 6px 0; */
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+nav .nav-link:hover {
+  font-weight: bold;
+}
+nav .nav-link::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  /* padding: 10px; */
+  /* padding-left: 15px; */
+  margin-top: 15px;
+  margin-left: 15px;
+  max-width: 0;
+  /* text-decoration: underline; */
+  text-underline-offset: 8px;
+  color: #fff;
+  content: attr(data-hover);
+  -webkit-transition: max-width 0.5s;
+  -moz-transition: max-width 0.5s;
+  transition: max-width 0.5s;
+}
+
+nav .nav-link:hover::before {
+  max-width: 100%;
+  color: red;
+}
+nav .active {
+  color: white;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+/* LANDING Page */
+/* .landing_bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12%;
+  flex-wrap: wrap;
+  min-height: 92vh;
+  background-color: whitesmoke;
+} */
+.landing_bio {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: rgb(220, 220, 245);
+  min-height: 92vh;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+}
+
+.landing_bio h1 {
+  font-size: 2.5rem;
+}
+
+.tags_self_closing img {
+  height: 32px;
+  margin: 2px;
+}
+
+.landing_bio .tags_self_closing {
+  display: none;
+}
+
+.about_responsive_img_btns {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+}
+
+.landing_bio .socials {
+  display: none;
+}
+
+.mobile_hidden {
+  display: none;
+}
+.socials,
+.desktop_centered_link {
+  display: none;
+}
+
+.mobile_socials {
+  display: flex;
+  margin: 10px;
+}
+.mobile_socials i {
+  display: inline-block;
+  padding: 12px;
+  background-color: gray;
+  color: #000;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.column-half {
+  text-align: center;
+}
+
+/* spacing inside landing bio */
+
+/* end spacing for landing bio */
+
+/* LANDING PAGE END */
+
+/* ABOUT ME SECTION */
+
+.ABOUT_ME {
+  min-height: 56vh;
+  background-color: #e2ddd1;
+}
+
+.ABOUT_ME button {
+  padding: 10px 25px;
+}
+
+.ABOUT_ME .icons i.fa-envelope:hover {
+  background-color: rgb(63, 127, 190);
+  color: #333;
+}
+
+/* FADING ANIMATION FOR INTRO ABOUT IMAGE/PARAGRAPH/BUTTON PORTFOLIO */
+
+.about_image_animation {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.5s all ease-in-out;
+}
+
+.contact_field_animation {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.5s 0.2s all ease-in-out;
+}
+
+.about_me_header_animation {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.5s 0.7s all ease-in-out;
+}
+
+.paragraph_animation {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.5s 0.5s all ease-in-out;
+}
+.button_animation {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.5s 0.9s all ease-in-out;
+}
+
+.about_image_animation_appeared,
+.paragraph_animation_appeared,
+.button_animation_appeared,
+.contact_animation_appeared,
+.about_me_header_appeared {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ANIMATION END */
+
+/* ABOUT ME SECTION END */
+
+/* PROJECT'S SECTION */
+
+.PROJECTS {
+  background-color: whitesmoke;
+}
+
+/* project's animation */
+
+.projects_animation {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.5s 0.9s all ease-in-out;
+}
+.projects_animation_appeared {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* project's animation end */
+
+/* accordion animation */
+
+.accordion_link {
+  /* background-image: linear-gradient(to right, #54b3d6, #54b3d6 50%, #000 50%); */
+  background-image: linear-gradient(
+    to right,
+    #ff0000,
+    #ff0000 50%,
+    #000000 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.accordion_link:hover {
+  background-position: 0;
+}
+
+.accordion_link:hover::before {
+  width: 100%;
+}
+/* accordion animation end */
+
+/* PROJECT'S SECTION END */
+
+/* SKILL'S SECTION */
+
+.SKILLS {
+  min-height: 10vh;
+  background-color: #fff;
+}
+/* skills animation */
+
+.skills_animation_fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.5s all ease-in-out;
+}
+
+.skills_animation_appeared {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* skills animation end */
+
+/* SKILL'S SECTION END */
+
+/* TOOL'S SECTION */
+
+.TOOLS {
+  background-color: rgb(209, 191, 191);
+  /* Additional properties for background size and repeat */
+  background-size: cover; /* or contain, depending on your needs */
+  background-repeat: no-repeat;
+  min-height: 63vh;
+  /* background-image: url('./svg/scribbles.svg'); */
+  background-position: center center;
+  background-size: contain;
+  background-repeat: repeat;
+  color: var(--white);
+}
+
+.TOOLS img {
+  padding: 15px;
+  height: 100px;
+}
+
+/* tool's animation */
+
+.tools_animation_fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.5s all ease-in-out;
+}
+
+.tools_animation_appeared {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* tool's animation end */
+
+/* TOOL'S SECTION END */
+
+/* FOOTER */
+
+footer {
+  min-height: 60vh;
+}
+.contact_links {
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+/* FOOTER TOP TITLE DIVIDER */
+
+.hBJahJ {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.footer_icons {
+  margin: 10px;
+}
+
+/* DIVIDER END */
+
+.contact_links a {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: max-content;
+  gap: 0.5rem;
+  margin: 0rem 1rem;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.animated-underline::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.animated-underline:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.animated-underline {
+  position: relative;
+  padding: 0.5rem 0px;
+  text-align: center;
+  font-size: 1.25rem;
+  width: fit-content;
+  margin: auto;
+}

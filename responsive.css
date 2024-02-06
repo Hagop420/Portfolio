@@ -1,0 +1,206 @@
+@media (max-width: 768px) {
+  /* CARD LATER */
+  /* .card-invisible {
+      display: none !important;
+    } */
+}
+
+@media (min-width: 768px) {
+  /* FOOTER */
+  footer {
+    min-height: 52vh;
+  }
+  .contact_links {
+    display: grid;
+    gap: 0.7rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+  }
+
+  .hBJahJ {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5rem;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
+
+  .footer_icons i {
+    display: inline-block;
+    padding: 12px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 50%;
+    margin: 5px;
+  }
+
+  /* FOOTER END */
+
+  /* TOOLS GRID SECTION */
+  .TOOLS {
+    min-height: 40vh;
+  }
+
+  .tools_grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  /* TOOLS GRID SECTION END */
+
+  /* TECHNICAL SKILL'S SECTION */
+
+  .skills_responsive_grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  /* TECHNICAL SKILLS SECTION END */
+
+  /* PROJECT'S SECTION/ACCORDION */
+
+  /* PROJECT'S SECTION ACCORDION END */
+
+  /* CURRENTLY ON ABOOUT ME SEC. */
+  .ABOUT_ME {
+    flex-direction: row;
+  }
+
+  .ABOUT_ME .icons i {
+    display: inline-block;
+    padding: 12px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 50%;
+    margin: 5px;
+  }
+
+  .about_title_para_responsive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about_responsive_img_btns {
+    display: block;
+    margin: auto;
+  }
+
+  /* ABOUT ME END */
+
+  /* Landing page section */
+  .landing_bio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  /* SHAWNS STUFF */
+  .landing_bio .desktop_title {
+    text-align: left;
+    font-size: 3.5rem;
+  }
+
+  .column-half {
+    /* width: 100%; */
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .mobile_hidden {
+    display: inline-flex;
+  }
+  .landing_bio .desktop_link_hidden {
+    display: none;
+  }
+  /* SHAWNS STUFF END */
+
+  .mobile_socials {
+    display: none;
+  }
+
+  .column-half .socials {
+    width: 50%;
+    text-align: right;
+  }
+
+  .landing_bio .socials {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .landing_bio .socials i {
+    font-size: 50px;
+    margin: 3px;
+    background: transparent;
+  }
+
+  /* socials path */
+
+  .landing_bio .socials i.fa.fa-github,
+  .landing_bio .socials i.fa.fa-linkedin,
+  .landing_bio .socials i.fa.fa-envelope {
+    transition: 0.5s all ease-in-out;
+  }
+
+  .landing_bio .socials i.fa.fa-github {
+    color: #333;
+  }
+  .landing_bio .socials i.fa.fa-linkedin {
+    color: #0077b5;
+  }
+  .landing_bio .socials i.fa.fa-envelope {
+    color: #fe8c00; /* fallback for old browsers */
+    color: -webkit-linear-gradient(
+      to right,
+      #fe8c00,
+      #f83600
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    color: linear-gradient(to right, #fe8c00, #f83600);
+  }
+
+  .landing_bio .socials i.fa.fa-github:hover,
+  .landing_bio .socials i.fa.fa-linkedin:hover,
+  .landing_bio .socials i.fa.fa-envelope:hover {
+    transform: scale(1.1);
+  }
+
+  /* socials path end */
+
+  /* .landing_bio .socials .column-full {
+    display: flex;
+    float: left;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+  } */
+
+  .desktop_centered_link {
+    display: inline-flex;
+  }
+
+  .landing_bio span {
+    font-size: 1.4rem;
+    margin: 5.5px;
+  }
+
+  .tags_self_closing img {
+    height: 32px;
+    margin: 2px;
+  }
+
+  .landing_bio .tags_self_closing {
+    position: absolute;
+    display: inline-flex;
+  }
+
+  /* SOCIAL LINKS IN LANDING PG */
+
+  /* SOCIALS IN LANDING PG END */
+
+  /* Landing page section end */
+}
