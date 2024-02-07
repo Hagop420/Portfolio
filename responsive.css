@@ -65,6 +65,7 @@
   /* CURRENTLY ON ABOOUT ME SEC. */
   .ABOUT_ME {
     flex-direction: row;
+    min-height: 56vh;
   }
 
   .ABOUT_ME .icons i {
@@ -96,6 +97,7 @@
     flex-direction: row;
     justify-content: space-between;
     flex-direction: row;
+    min-height: 98vh;
   }
 
   /* SHAWNS STUFF */

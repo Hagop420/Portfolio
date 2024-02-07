@@ -248,12 +248,17 @@ nav .active {
 /* ABOUT ME SECTION */
 
 .ABOUT_ME {
-  min-height: 56vh;
+  min-height: 58vh;
   background-color: #e2ddd1;
+}
+
+.mobile_size {
+  height: 300px;
 }
 
 .ABOUT_ME button {
   padding: 10px 25px;
+  margin: 20px auto;
 }
 
 .pad {
