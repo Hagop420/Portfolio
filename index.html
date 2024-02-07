@@ -31,7 +31,7 @@
             <a href="#about_me_scroll" class="nav-link text-white" data-hover="About">About</a>
          </li>
          <li>
-            <a href="#" class="nav-link text-white" data-hover="Projects">Projects</a>
+            <a href="#projects_navigate" class="nav-link text-white" data-hover="Projects">Projects</a>
 
          </li>
          <li>
@@ -40,13 +40,13 @@
 
          </li>
          <li>
-            <a href="#" class="nav-link text-white" data-hover="Skills">Skills</a>
+            <a href="#skills_navigate" class="nav-link text-white" data-hover="Skills">Skills</a>
          </li>
          <li>
-            <a href="#" class="nav-link text-white" data-hover="Tools">Tools</a>
+            <a href="#tools_navigate" class="nav-link text-white" data-hover="Tools">Tools</a>
          </li>
          <li>
-            <a href="#" class="nav-link text-white" data-hover="Contact">Contact</a>
+            <a href="#footer_navigator" class="nav-link text-white" data-hover="Contact">Contact</a>
          </li>
 
          <div class="closeMenu">
@@ -176,7 +176,7 @@
       <div class="about_image_animation m-auto p-5">
          <div class="about_responsive_img_btns">
             <!-- <img src="./img/porxtfolio_image.jpeg" alt="Portfolio Image" class="rounded-full"> -->
-            <img src="./portfolio_img.png" alt="Portfolio Image" class="rounded-full">
+            <img src="./portfolio_image.jpeg" alt="Portfolio Image" class="rounded-full image_sized">
          </div>
          <!-- contact links -->
          <div class="contact_field_animation">
@@ -271,7 +271,7 @@
                <p><a href="https://hagop420.github.io/Spaceaholics/" class="italic accordion_link"
                      target="_blank">Spaceaholics</a>
                   is a front end ajax application that is designed to implement various NASA api calls including NASA'S
-                  daily <abbr title="Astronomy picture of the day">APOD</abbr> images, searching features, etc.
+                  daily <abbr title="Astronomy picture of the day">APOD</abbr> images, searching features and more.
                   User has the flexibility of searching and storing their favorite NASA related images to a favorites
                   page. By clicking on the photo, the user can see a closer frame of the image along with its individual
                   description. On the page, there's a pencil icon where the user goes back home when the icon is clicked
@@ -286,15 +286,14 @@
                Code Journal
             </div>
             <div class="collapse-content">
-               <p><a href="https://hagop420.github.io/Spaceaholics/" class="italic accordion_link"
-                     target="_blank">Spaceaholics</a>
-                  is a front end ajax application that is designed to implement various NASA api calls including NASA'S
-                  daily <abbr title="Astronomy picture of the day">APOD</abbr> images, searching features, etc.
-                  User has the flexibility of searching and storing their favorite NASA related images to a favorites
-                  page. By clicking on the photo, the user can see a closer frame of the image along with its individual
-                  description. On the page, there's a pencil icon where the user goes back home when the icon is clicked
-                  and is able to edit the existing photo or delete there existing favorited image by clicking on the
-                  black hole or returning back to your favorited list by clicking on the sun icon.
+               <p><a href="https://hagop420.github.io/code-journal/" class="italic accordion_link" target="_blank">Code
+                     Journal</a>
+                  is a front end application that implements a form that allows you to enter your favorite photo URL
+                  along with the photo's title and explanation and store the desired input into a favorited page which
+                  stores the form contents into <abbr title="localStorage">LS.</abbr> While inside of the favorites page
+                  user's are given an option to edit there favorites page content's. When editing users have the option
+                  of changing the form's contents or deleting the entire entry completely which if deleted will
+                  decrement the entries inside of the favorites view page.
                </p>
             </div>
          </div>
@@ -318,8 +317,10 @@
             <div class="collapse-content">
                <p><a href="https://hagop420.github.io/quotes-generator/" class="italic accordion_link"
                      target="_blank">Quotes
-                     generator</a> is a front end application that allows you to enter in any number and get back the
-                  number converted into the amount in grams, killograms, and Ounces
+                     generator</a> is a front end application that takes in a list of motivational quotes and loops
+                  throught them and gives the user back a random quote each time. The application also imlements a
+                  youtube I frame audio which will start playing right when the button to start generating quotes is
+                  clicked. If desired you can pause the video from playing or play the audio when desired.
                </p>
             </div>
          </div>
@@ -346,8 +347,8 @@
 
    <!-- SKILL'S SECTION -->
 
-   <div class="flex flex-col">
-      <h2 class="capitalize text-4xl text-center bg-white text-black">Technical Skills</h2>
+   <div class="flex flex-col" id="skills_navigate">
+      <h2 class="capitalize text-4xl pad text-center bg-white text-black">Technical Skills</h2>
    </div>
    <div class="grid grid-cols-2 skills_animation_fade SKILLS skills_responsive_grid">
       <div class="p-3 m-4 rounded">
@@ -365,8 +366,8 @@
       </div>
       <div class="p-3 m-4 rounded">
          <div class="m-auto">
-            <img src="SCSS_logo.png" alt="SCSS" class="h-20 m-auto">
-            <p class="text-center text-black text-2xl">Sass(SCSS)</p>
+            <img src="tailwind_logo.webp" title="Tailwind" alt="Tailwind" class="h-20 m-auto">
+            <p class="text-center text-black text-2xl">Tailwind css</p>
          </div>
       </div>
       <div class="p-3 m-4 rounded">
@@ -377,8 +378,8 @@
       </div>
       <div class="p-3 m-4 rounded">
          <div class="m-auto">
-            <img src="tailwind_logo.webp" title="Tailwind" alt="Tailwind" class="h-20 m-auto">
-            <p class="text-center text-black text-2xl">Tailwind css</p>
+            <img src="SCSS_logo.png" alt="SCSS" class="h-20 m-auto">
+            <p class="text-center text-black text-2xl">Sass(SCSS)</p>
          </div>
       </div>
       <div class="p-3 m-4 rounded">
@@ -389,14 +390,14 @@
       </div>
       <div class="p-3 m-4 rounded">
          <div class="m-auto">
-            <img src="react_logo.png" title="React" alt="React js" class="h-20 m-auto">
-            <p class="text-center text-black text-2xl">React Js.</p>
+            <img src="ajax.png" title="AJAX" alt="AJAX" class="h-20 m-auto">
+            <p class="text-center text-black text-2xl">AJAX</p>
          </div>
       </div>
       <div class="p-3 m-4 rounded">
          <div class="m-auto">
-            <img src="react_logo.png" title="React Native" alt="React Native" class="h-20 m-auto">
-            <p class="text-center text-black text-2xl">React Native</p>
+            <img src="react_logo.png" title="React Js" alt="React Native" class="h-20 m-auto">
+            <p class="text-center text-black text-2xl">React Js.</p>
          </div>
       </div>
       <div class="p-3 m-4 rounded">
@@ -437,7 +438,7 @@
 
 
 
-   <div class="TOOLS">
+   <div class="TOOLS" id="tools_navigate">
       <div class="flex flex-col">
          <h2 class="text-center text-black text-4xl p-5">Tools</h2>
 
@@ -480,6 +481,12 @@
                   <p class="text-center">Vite</p>
                </div>
             </div>
+            <div class="m-auto">
+               <img src="./daisyUI.png" title="daisyUI" alt="daisyUI">
+               <div class="text-black">
+                  <p class="text-center">daisyUI</p>
+               </div>
+            </div>
 
 
             <div class="m-auto">
@@ -505,7 +512,7 @@
 
    <!-- FOOTER SECTION -->
 
-   <footer class="flex flex-col justify-center items-center">
+   <footer class="flex flex-col justify-center items-center" id="footer_navigator">
       <div class="ContactLogoDividers__ContactLogoDividersStyles-hkxkay-0 hBJahJ">
          <div class="divider"></div>
          <div class="flex">

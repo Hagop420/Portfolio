@@ -40,11 +40,12 @@
 
   /* TOOLS GRID SECTION */
   .TOOLS {
-    min-height: 40vh;
+    min-height: 50vh;
   }
 
   .tools_grid {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    font-weight: 450;
   }
 
   /* TOOLS GRID SECTION END */
