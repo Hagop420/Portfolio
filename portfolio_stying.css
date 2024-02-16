@@ -183,7 +183,7 @@ nav .active {
 
   flex-wrap: wrap;
   flex-direction: column;
-  background-color: rgb(146, 204, 206);
+  background-color: hwb(180 86% 8%);
   min-height: 92vh;
   align-items: center;
   justify-content: center;
@@ -254,6 +254,7 @@ nav .active {
 
 .mobile_size {
   height: 300px;
+  border-radius: 50%;
 }
 
 .ABOUT_ME button {
