@@ -52,7 +52,6 @@ nav .mainMenu .closeMenu,
 }
 
 .fa-github:hover {
-  background-color: grey;
   color: #fff;
   cursor: pointer;
 }
@@ -352,7 +351,7 @@ nav .active {
   background-size: 200% 100%;
   background-position: -100%;
   display: inline-block;
-  padding: 5px 0;
+  padding: 2px 0;
   position: relative;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -361,6 +360,7 @@ nav .active {
 
 .accordion_link:hover {
   background-position: 0;
+  border-bottom: 2px black solid;
 }
 
 .accordion_link:hover::before {

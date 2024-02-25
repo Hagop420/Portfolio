@@ -1,10 +1,3 @@
-@media (max-width: 768px) {
-  /* CARD LATER */
-  /* .card-invisible {
-      display: none !important;
-    } */
-}
-
 @media (min-width: 768px) {
   /* FOOTER */
   footer {
@@ -15,6 +8,24 @@
     gap: 0.7rem;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
+  }
+
+  .landscape_icons i.fa-github:hover {
+    color: #fff;
+    background-color: #000;
+    cursor: pointer;
+  }
+  .landscape_icons i.fa-linkedin:hover {
+    background: #0077b5;
+    color: #fff;
+  }
+  .landscape_icons i.fa-phone:hover {
+    background-color: silver;
+    color: #211818;
+  }
+  .landscape_icons i.fa-envelope:hover {
+    background-color: #f2a60c;
+    color: #fff;
   }
 
   .hBJahJ {
