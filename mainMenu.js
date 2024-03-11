@@ -7,9 +7,11 @@ closeMenu.addEventListener('click', close)
 
 function show() {
   mainMenu.style.display = 'flex'
+  document.body.style.overflow = 'hidden'
   mainMenu.style.top = '0'
 }
 
 function close() {
-  mainMenu.style.top = '-100%'
+  mainMenu.style.top = '-10%'
+  document.body.style.overflow = 'scroll'
 }

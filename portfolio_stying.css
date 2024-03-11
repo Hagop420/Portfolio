@@ -439,6 +439,8 @@ nav .active {
 /* FOOTER */
 
 footer {
+  background: #4f4c4c;
+  color: #fff;
   min-height: 60vh;
   background-image: url('./scribbles.svg');
   background-position: center center;
