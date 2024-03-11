@@ -49,7 +49,7 @@ nav .openMenu {
 
 nav .mainMenu .closeMenu,
 .icons i {
-  display: none;
+  display: none !important;
 }
 
 .fa-github:hover {
