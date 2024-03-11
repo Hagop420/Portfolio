@@ -94,7 +94,7 @@ nav .logo {
     color: yellow !important;
   }
   nav .mainMenu {
-    transition: all 1.3s ease-in-out;
+    transition: all 1s ease-in-out;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -201,7 +201,7 @@ nav .active {
 
 .tags_self_closing img {
   height: 32px;
-  margin: 2px;
+  margin: 4px;
 }
 
 .landing_bio .tags_self_closing {

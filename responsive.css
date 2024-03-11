@@ -215,6 +215,7 @@
   .landing_bio .tags_self_closing {
     position: absolute;
     display: inline-flex;
+    margin-left: 4px;
   }
 
   /* SOCIAL LINKS IN LANDING PG */
