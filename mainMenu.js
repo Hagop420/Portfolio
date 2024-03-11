@@ -12,6 +12,6 @@ function show() {
 }
 
 function close() {
-  mainMenu.style.top = '-10%'
+  mainMenu.style.top = '-100%'
   document.body.style.overflow = 'scroll'
 }
