@@ -162,10 +162,9 @@ nav .nav-link::before {
   top: 0;
   left: 0;
   overflow: hidden;
-  /* padding: 10px; */
-  /* padding-left: 15px; */
-  margin-top: 15px;
-  margin-left: 15px;
+
+  margin-top: 5px;
+  margin-left: 5px;
   max-width: 0;
   /* text-decoration: underline; */
   text-underline-offset: 8px;
