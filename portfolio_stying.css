@@ -410,7 +410,7 @@ nav .active {
   /* Additional properties for background size and repeat */
   background-size: cover; /* or contain, depending on your needs */
   background-repeat: no-repeat;
-  min-height: 63vh;
+  min-height: 92vh;
   /* background-image: url('./svg/scribbles.svg'); */
   background-position: center center;
   background-size: contain;
