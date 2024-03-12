@@ -199,7 +199,9 @@
   } */
 
   .desktop_centered_link {
-    display: inline-flex;
+    display: flex;
+    justify-content: flex-start;
+    width: 0;
   }
 
   .landing_bio span {

@@ -94,13 +94,14 @@ nav .logo {
     color: yellow !important;
   }
   nav .mainMenu {
-    transition: all 1s ease-in-out;
+    transition: all 1.3s ease-in-out;
     height: 100vh;
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
     z-index: 10;
+    padding: 200px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -117,6 +118,10 @@ nav .logo {
 
   nav .openMenu {
     display: block;
+  }
+
+  span.icons {
+    display: flex;
   }
 
   nav .mainMenu li a {
