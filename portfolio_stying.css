@@ -12,6 +12,11 @@ html {
   padding: 0;
 }
 
+.github_background:hover {
+  background: #000 !important;
+  color: #fff !important;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
 }
