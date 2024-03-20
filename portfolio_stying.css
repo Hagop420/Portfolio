@@ -177,7 +177,9 @@ nav .nav-link::before {
 
 nav .nav-link:hover::before {
   max-width: 100%;
-  color: red;
+  color: hsl(60, 100%, 50%);
+  margin-top: 15px;
+  margin-left: 15px;
 }
 nav .active {
   color: white;
