@@ -204,6 +204,15 @@
     width: 0;
   }
 
+  /* for the navbar hover effect */
+
+  nav .nav-link:hover::before {
+    max-width: 100%;
+    color: hsl(60, 100%, 50%);
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+
   .landing_bio span {
     font-size: 1.4rem;
     margin: 5.5px;
