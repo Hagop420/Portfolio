@@ -80,7 +80,9 @@
   }
 
   .mobile_size {
-    height: 270px;
+    height: 300px;
+    padding: 10px;
+    border-radius: 45%;
     object-fit: cover;
   }
 
