@@ -59,6 +59,7 @@ nav .mainMenu .closeMenu,
 }
 
 .fa-github:hover {
+  background: #626060;
   color: #fff;
   cursor: pointer;
 }
